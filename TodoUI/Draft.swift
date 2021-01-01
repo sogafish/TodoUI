@@ -12,7 +12,9 @@ struct Draft: View {
     @EnvironmentObject var userData: UserData
     
     func AddTodo() {
-        self.userData.isTodoInputEditting = false
+        withAnimation() {
+            self.userData.isTodoInputEditting = false
+        }
 
         let newTask = Task(title: self.itemTitle, isChecked: false)
         self.userData.tasks.insert(newTask, at: 0)
