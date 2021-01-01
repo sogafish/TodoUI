@@ -16,7 +16,9 @@ struct ContentView: View {
     }
     
     func ToggleisInputEditting() {
-        self.userData.isTodoInputEditting.toggle()
+        withAnimation() {
+            self.userData.isTodoInputEditting.toggle()
+        }
     }
 
     var body: some View {
