@@ -15,16 +15,20 @@ struct RowItem: View {
         HStack {
             if isChecked {
                 Text("☑")
+                Text(itemName)
+                    .strikethrough(isChecked, color: Color.gray)
+                    .fontWeight(.ultraLight)
             } else {
                 Text("□")
+                Text(itemName)
+                    .strikethrough(isChecked)
             }
-            Text(itemName)
         }
     }
 }
 
 struct RowItem_Previews: PreviewProvider {
     static var previews: some View {
-        RowItem(itemName: "Yo", isChecked: true)
+        RowItem(itemName: "Item>>>>>>>>>>>>>>>>>>>>>>", isChecked: true)
     }
 }
