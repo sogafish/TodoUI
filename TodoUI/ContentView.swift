@@ -9,6 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var userData = UserData()
+    
+    func DeleteCheckedItems() {
+        let uncheckedItems = self.userData.tasks.filter({!$0.isChecked})
+        self.userData.tasks = uncheckedItems
+    }
 
     var body: some View {
         NavigationView {
@@ -27,7 +32,7 @@ struct ContentView: View {
                 Text("＋").font(.title)
             }
             .navigationTitle(Text("Todo"))
-//            .navigationBarItems(trailing: Text("Delete"))
+            .navigationBarItems(trailing: DeleteButton(deleteFunc: DeleteCheckedItems))
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F5D693D259EEB2F00426A8C /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D693C259EEB2F00426A8C /* DeleteButton.swift */; };
 		3FF08162259E173400306CB2 /* TodoUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF08161259E173400306CB2 /* TodoUIApp.swift */; };
 		3FF08164259E173400306CB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF08163259E173400306CB2 /* ContentView.swift */; };
 		3FF08166259E173600306CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF08165259E173600306CB2 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F5D693C259EEB2F00426A8C /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 		3FF0815E259E173400306CB2 /* TodoUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF08161259E173400306CB2 /* TodoUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUIApp.swift; sourceTree = "<group>"; };
 		3FF08163259E173400306CB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				3FF0818F259ECB0100306CB2 /* RowItem.swift */,
 				3FF08194259ED75E00306CB2 /* UserData.swift */,
 				3FF0819F259EDB7D00306CB2 /* Task.swift */,
+				3F5D693C259EEB2F00426A8C /* DeleteButton.swift */,
 				3FF08165259E173600306CB2 /* Assets.xcassets */,
 				3FF0816A259E173600306CB2 /* Info.plist */,
 				3FF08167259E173600306CB2 /* Preview Content */,
@@ -270,6 +273,7 @@
 			files = (
 				3FF08164259E173400306CB2 /* ContentView.swift in Sources */,
 				3FF08162259E173400306CB2 /* TodoUIApp.swift in Sources */,
+				3F5D693D259EEB2F00426A8C /* DeleteButton.swift in Sources */,
 				3FF081A0259EDB7D00306CB2 /* Task.swift in Sources */,
 				3FF08195259ED75E00306CB2 /* UserData.swift in Sources */,
 				3FF08190259ECB0100306CB2 /* RowItem.swift in Sources */,
