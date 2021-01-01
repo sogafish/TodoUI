@@ -9,10 +9,15 @@ import SwiftUI
 
 struct RowItem: View {
     let itemName: String
+    var isChecked: Bool
 
     var body: some View {
         HStack {
-            Text("□")
+            if isChecked {
+                Text("☑")
+            } else {
+                Text("□")
+            }
             Text(itemName)
         }
     }
@@ -20,6 +25,6 @@ struct RowItem: View {
 
 struct RowItem_Previews: PreviewProvider {
     static var previews: some View {
-        RowItem(itemName: "Yo")
+        RowItem(itemName: "Yo", isChecked: true)
     }
 }

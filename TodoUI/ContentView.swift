@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    var userData = UserData()
+
     var body: some View {
         NavigationView {
             List {
-                RowItem(itemName: "")
-                HStack {
-                    Text("□")
-                    Text("TodoC")
+                ForEach(userData.tasks) { task in
+                    RowItem(itemName: task.title, isChecked: task.isChecked)
                 }
                 Text("＋").font(.title)
             }

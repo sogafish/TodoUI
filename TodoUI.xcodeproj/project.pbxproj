@@ -14,6 +14,8 @@
 		3FF08174259E173600306CB2 /* TodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF08173259E173600306CB2 /* TodoUITests.swift */; };
 		3FF0817F259E173600306CB2 /* TodoUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0817E259E173600306CB2 /* TodoUIUITests.swift */; };
 		3FF08190259ECB0100306CB2 /* RowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0818F259ECB0100306CB2 /* RowItem.swift */; };
+		3FF08195259ED75E00306CB2 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF08194259ED75E00306CB2 /* UserData.swift */; };
+		3FF081A0259EDB7D00306CB2 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0819F259EDB7D00306CB2 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3FF0817E259E173600306CB2 /* TodoUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUIUITests.swift; sourceTree = "<group>"; };
 		3FF08180259E173600306CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FF0818F259ECB0100306CB2 /* RowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowItem.swift; sourceTree = "<group>"; };
+		3FF08194259ED75E00306CB2 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		3FF0819F259EDB7D00306CB2 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				3FF08161259E173400306CB2 /* TodoUIApp.swift */,
 				3FF08163259E173400306CB2 /* ContentView.swift */,
 				3FF0818F259ECB0100306CB2 /* RowItem.swift */,
+				3FF08194259ED75E00306CB2 /* UserData.swift */,
+				3FF0819F259EDB7D00306CB2 /* Task.swift */,
 				3FF08165259E173600306CB2 /* Assets.xcassets */,
 				3FF0816A259E173600306CB2 /* Info.plist */,
 				3FF08167259E173600306CB2 /* Preview Content */,
@@ -264,6 +270,8 @@
 			files = (
 				3FF08164259E173400306CB2 /* ContentView.swift in Sources */,
 				3FF08162259E173400306CB2 /* TodoUIApp.swift in Sources */,
+				3FF081A0259EDB7D00306CB2 /* Task.swift in Sources */,
+				3FF08195259ED75E00306CB2 /* UserData.swift in Sources */,
 				3FF08190259ECB0100306CB2 /* RowItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
