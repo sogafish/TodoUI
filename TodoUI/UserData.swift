@@ -14,4 +14,6 @@ class UserData: ObservableObject {
         Task(title: "TaskB", isChecked: true),
         Task(title: "TaskC", isChecked: false)
     ]
+    
+    @Published var isTodoInputEditting = false
 }

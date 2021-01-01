@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var userData = UserData()
+    @EnvironmentObject var userData: UserData
     
     func DeleteCheckedItems() {
         let uncheckedItems = self.userData.tasks.filter({!$0.isChecked})
         self.userData.tasks = uncheckedItems
+    }
+    
+    func ToggleisInputEditting() {
+        self.userData.isTodoInputEditting.toggle()
     }
 
     var body: some View {
@@ -29,7 +33,12 @@ struct ContentView: View {
                         RowItem(itemName: task.title, isChecked: task.isChecked)
                     })
                 }
-                Text("＋").font(.title)
+                
+                if self.userData.isTodoInputEditting {
+                    Draft()
+                } else {
+                    AddButton(onPress: ToggleisInputEditting)
+                }
             }
             .navigationTitle(Text("Todo"))
             .navigationBarItems(trailing: DeleteButton(deleteFunc: DeleteCheckedItems))
@@ -40,5 +49,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(UserData())
     }
 }
